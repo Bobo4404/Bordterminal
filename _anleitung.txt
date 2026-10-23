@@ -1,0 +1,77 @@
+# ===========================================================================
+#  DER ORDNER dialoge/
+# ---------------------------------------------------------------------------
+#  Jede .txt hier ist eine von vier Sachen. Woran du sie erkennst:
+#
+#    MELDUNG:           -> Durchsage     kommt von selbst
+#    FRAGE: + JA: NEIN: -> Frage         kommt von selbst, wartet auf Antwort
+#    AN: + STICHWORT:   -> Szene         kommt, wenn du jemanden ansprichst
+#    PARTNER:           -> Partner       legt fest, wie jemand antwortet
+#
+#  Dateinamen mit _ am Anfang sind Notizen: gelesen, nie verwendet, nie
+#  auf Fehler geprueft. Diese Datei hier ist eine.
+#
+#  NICHT ABSCHREIBEN - kopieren lassen:
+#
+#      dialog neu durchsage  kombuese
+#      dialog neu frage      werkstatt
+#      dialog neu szene      frachtraum_01
+#      dialog neu partner    partner_neu
+#
+#  Das legt die Datei an, du fuellst nur noch die <Klammern> aus.
+#  Danach  dialog  eintippen: das prueft alle Dateien und nennt dir jeden
+#  Fehler mit Zeilennummer.
+#
+#  Die Muster liegen als _muster_*.txt daneben und erklaeren jedes Feld.
+#  _muster_kette.txt erklaert, wie aus mehreren Dateien ein Dialogzweig wird.
+#
+# ---------------------------------------------------------------------------
+#  NACHSCHLAGEN
+# ---------------------------------------------------------------------------
+#
+#  ALLE FELDER
+#    TITEL       nur fuer dich, wird nirgends angezeigt
+#    KANAL       wy oder muthur - wer spricht
+#    AN          ripley ash newt dave muthur wy - wen du ansprichst
+#    STICHWORT   worauf die Szene reagiert, mit Komma getrennt
+#    BEDINGUNG   wann das ueberhaupt kommen darf, mehrere Zeilen erlaubt
+#    GEWICHT     1 bis 20, wie oft im Vergleich zu anderen Durchsagen
+#    MELDUNG     Text ohne Rueckfrage
+#    FRAGE       Text, der eine Antwort erwartet
+#    JA / NEIN   die beiden Erwiderungen, bei FRAGE beide Pflicht
+#    FOLGE       bei ja ausfuehren: scan sitrep map radar home fin
+#    WEITER      naechste Datei, auch WEITER_JA und WEITER_NEIN
+#    SPAETER     <datei> nach <zahl> - meldet sich nach so vielen Eingaben
+#    SETZE       Merker setzen, auch SETZE_JA und SETZE_NEIN
+#    LOESCHE     Merker wieder entfernen
+#    ZAEHLE      <name> +1 oder -1, fuer Verhaeltnisse
+#    PARTNER     macht die Datei zu einem Gespraechspartner
+#    KUERZEL     womit du ihn ansprichst, etwa r fuer @r
+#    HALLO DANKE REPORT STATUS WER SORRY BYE   Themen eines Partners
+#    SONST       Antwort eines Partners, wenn nichts davon passt
+#
+#  BEDINGUNG
+#    immer  offen  nichts_offen  ueberfaellig  kontamination  kein_scan
+#    erledigt_heute  morgen  mittag  abend  nacht  werktag  wochenende
+#    merker <name>              etwas ist passiert
+#    nicht merker <name>        etwas ist noch nicht passiert
+#    zaehler <name> >= <zahl>   auch <= > < =
+#
+#  PLATZHALTER
+#    {anrede} {name} {schiff} {logbuch} {datum} {zeit}
+#    {offen} {ueberfaellig} {erledigt}                 Zahlen
+#    {offen_text} {ueberfaellig_text} {erledigt_text}  mit richtiger Mehrzahl
+#
+#  SCHREIBWEISE
+#    # am Zeilenanfang ist eine Notiz und wird nicht gelesen.
+#    Mehrere Zeilen desselben Feldes bilden einen Vorrat, aus dem zufaellig
+#    gewaehlt wird. Lange Texte darfst du umbrechen: eine eingerueckte
+#    Folgezeile haengt automatisch an der vorigen.
+#
+#  BEFEHLE
+#    dialog                 alle Dateien anzeigen und pruefen
+#    dialog neu <muster> <name>   neue Datei anlegen
+#    dialog <name>          eine Datei sofort abspielen
+#    story                  Merker, Verhaeltnisse, laufende Auftraege
+#    @r reaktor             eine Szene ueber ihr Stichwort aufrufen
+# ===========================================================================
