@@ -1,0 +1,14 @@
+# Ripley kommt zurueck. Wird automatisch ausgeloest, nicht angesprochen.
+TITEL: Ripley meldet sich aus dem Reaktorraum
+AN: ripley
+
+FRAGE: Ich bin wieder oben. Die Kuehlleitung an Block zwei schwitzt.
+       Kein Leck, aber es gehoert in die Wartung. Soll ich es eintragen?
+JA: Mach ich. Und ich schau in ein paar Tagen nochmal drauf.
+NEIN: Deine Entscheidung. Ich habe es gesehen, mehr kann ich nicht tun.
+
+LOESCHE: ripley_unterwegs
+SETZE: reaktor_geprueft
+SETZE_JA: kuehlleitung_gemeldet
+ZAEHLE_NEIN: vertrauen_ripley -1
+WEITER_JA: ash_fragt_nach

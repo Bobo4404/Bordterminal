@@ -1,0 +1,18 @@
+# Erste Szene einer kleinen Geschichte.
+# Aufruf:  @r reaktor
+TITEL: Ripley sieht im Reaktorraum nach
+AN: ripley
+STICHWORT: reaktor, reaktorraum, antrieb, maschinenraum
+BEDINGUNG: nicht merker reaktor_geprueft
+BEDINGUNG: nicht merker ripley_unterwegs
+
+FRAGE: Der Reaktor? Da unten war ich seit Tagen nicht. Soll ich nachsehen?
+FRAGE: Du meinst das Brummen aus Deck D. Ich kann runtergehen, wenn du willst.
+
+JA: Gut. Gib mir ein paar Minuten, dann melde ich mich.
+NEIN: Auch recht. Dann bleibt es eben, wie es ist.
+
+SETZE_JA: ripley_unterwegs
+ZAEHLE_JA: vertrauen_ripley +1
+SPAETER_JA: reaktor_02 nach 4
+ZAEHLE_NEIN: vertrauen_ripley -1

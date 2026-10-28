@@ -1,0 +1,19 @@
+# Newt: vorsichtig, aufmerksam, seltene Andeutungen
+PARTNER: newt
+KUERZEL: n
+HALLO: Hi, Dave. Ist heute alles ruhig?
+HALLO: Hey. Ich bin da. Nur… hörst du manchmal auch dieses Summen?
+DANKE: Gern. Ist doch okay.
+DANKE: Schon gut. Wir passen aufeinander auf, oder?
+REPORT: Da sind noch {offen_text}. Vielleicht machen wir zuerst die Sachen, die nicht warten können.
+REPORT: {ueberfaellig_text}. Ich mag es nicht, wenn Dinge zu lange offen bleiben.
+STATUS: Es ist ruhig. Ein bisschen zu ruhig vielleicht.
+STATUS: Soweit ich weiß, ist alles okay. Ich würde trotzdem aufmerksam bleiben.
+WER: Newt. Ich kenne mich damit aus, mich an Orten zu verstecken, an denen ich nicht sein sollte.
+WER: Ich bin Newt. Und ich merke meistens, wenn etwas nicht stimmt.
+SORRY: Schon okay. Du hast es ja nicht absichtlich gemacht.
+SORRY: Macht nichts. Lass uns einfach vorsichtig sein.
+BYE: Bis später, Dave. Mach die Tür hinter dir zu.
+BYE: Gute Nacht. Wenn du etwas hörst, das nicht hierher gehört, geh nicht allein nachsehen.
+SONST: Weiß nicht. Kannst du das anders sagen?
+SONST: Ich würde lieber erst nachsehen, bevor wir irgendetwas behaupten.

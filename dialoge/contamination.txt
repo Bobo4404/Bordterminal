@@ -1,0 +1,9 @@
+# Nur verwenden, wenn deine Anwendung den Zustand kontamination kennt
+KANAL: muthur
+BEDINGUNG: kontamination
+GEWICHT: 8
+TITEL: Kontaminationsprotokoll
+FRAGE: Achtung. Ein Kontaminationsstatus ist aktiv. Soll ich das verfügbare Lageprotokoll anzeigen?
+JA: Lageprotokoll wird geöffnet. Bitte beachten Sie die dort aufgeführten Hinweise.
+NEIN: Verstanden. Der Status bleibt aktiv und wird nicht als erledigt markiert.
+FOLGE: sitrep

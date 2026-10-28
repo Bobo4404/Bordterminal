@@ -1,0 +1,6 @@
+# Seltene Unregelmäßigkeit; bewusst mehrdeutig, ohne neue Zustandslogik
+KANAL: muthur
+BEDINGUNG: immer
+GEWICHT: 1
+TITEL: Unvollständiger Diagnoseeintrag
+MELDUNG: Diagnosehinweis: Ein älterer Systemeintrag konnte keiner aktuellen Sitzung zugeordnet werden. Die regulären Funktionen sind verfügbar. Weitere Maßnahmen sind derzeit nicht angefordert.

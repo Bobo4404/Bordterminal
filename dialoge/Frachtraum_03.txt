@@ -1,0 +1,16 @@
+#---- DATEI: wy_anweisung.txt ---------------------------------------------------
+
+# ===========================================================================
+# DURCHSAGE / FRAGE: Direktive der Zentrale zu Siphon
+# Wird ausgelöst, wenn das Leck ignoriert wurde (SETZE_NEIN in frachtraum_02)
+# ===========================================================================
+
+TITEL: Direktive der Zentrale zu Siphon
+KANAL: wy
+BEDINGUNG: merker leck_ignoriert
+GEWICHT: 10
+FRAGE: Warnung: Unkontrollierter Substanzaustritt in Frachtraum 2 erfasst. Erfuelle Direktive 937 und schalte auf Automatik-Quarantaene?
+JA: Direktive aktiviert. Frachtraum 2 isoliert. Besatzung auf Deck A beschraenkt.
+NEIN: Nichtbefolgung im Protokoll erfasst. Disziplinarische Konsequenzen folgen.
+SETZE_JA: quarantaene_aktiv
+FOLGE: sitrep

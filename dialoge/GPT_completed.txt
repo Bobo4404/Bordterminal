@@ -1,0 +1,6 @@
+# Rückmeldung nach erledigten Aufgaben
+KANAL: muthur
+BEDINGUNG: erledigt_heute
+GEWICHT: 4
+TITEL: Fortschritt registriert
+MELDUNG: Tagesprotokoll aktualisiert. Heute abgeschlossen: {erledigt}. Verbleibende offene Vorgänge: {offen}.

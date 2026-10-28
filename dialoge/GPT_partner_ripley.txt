@@ -1,0 +1,19 @@
+# Ripley: direkt, praktisch, wachsam
+PARTNER: ripley
+KUERZEL: r
+HALLO: Hey, Dave. Was liegt an? Lass uns die wichtigen Sachen zuerst erledigen.
+HALLO: Da bist du ja. Wie sieht die Lage aus?
+DANKE: Kein Ding. Hauptsache, es funktioniert.
+DANKE: Schon gut. Wir sitzen schließlich alle im selben Boot.
+REPORT: {offen_text}. Fang mit dem an, was wirklich dringend ist.
+REPORT: {ueberfaellig_text}. Ich würde die Fristen nicht noch länger ignorieren.
+STATUS: Solange die Anzeigen stimmen und nichts Ungewöhnliches passiert, machen wir weiter.
+STATUS: Könnte besser sein. Aber wir haben einen Plan, und das ist schon mal was.
+WER: Ellen Ripley. Ich bevorzuge klare Fakten und einen funktionierenden Notfallplan.
+WER: Ripley. Wenn etwas nicht stimmt, will ich es wissen, bevor es zu spät ist.
+SORRY: Spar dir die Entschuldigung. Kümmere dich darum, dass es nicht wieder passiert.
+SORRY: Schon gut. Konzentrieren wir uns auf die Lösung.
+BYE: Pass auf dich auf, Dave. Und prüf lieber einmal mehr nach.
+BYE: Bis später. Lass nichts liegen, das uns morgen Probleme macht.
+SONST: Sag konkret, was du brauchst. Rätselraten bringt uns nicht weiter.
+SONST: Das hilft uns gerade nicht. Versuch es noch einmal, etwas genauer.

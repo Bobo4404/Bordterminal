@@ -1,0 +1,12 @@
+# Überfällige Aufgaben: sachlich, leicht formeller
+KANAL: muthur
+BEDINGUNG: ueberfaellig
+GEWICHT: 7
+TITEL: Fristüberschreitung
+FRAGE: {anrede}, die Fristenüberwachung meldet {ueberfaellig} überfällige Vorgänge. Soll ich den Statusbericht öffnen?
+FRAGE: Eine Terminabweichung wurde registriert. {ueberfaellig} Vorgänge liegen außerhalb ihrer Frist. Bericht anzeigen?
+JA: Bericht wird geöffnet. Ich empfehle, zuerst die älteste Frist zu prüfen.
+JA: Bestätigt. Die überfälligen Vorgänge werden priorisiert angezeigt.
+NEIN: Verstanden. Ich werde die Abweichung weiterhin im Status führen.
+NEIN: Zur Kenntnis genommen. Die Fristüberschreitung bleibt bestehen.
+FOLGE: sitrep

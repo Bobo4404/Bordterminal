@@ -1,0 +1,15 @@
+# Meldet sich nur an Werktagen vormittags.
+TITEL: Morgendliche Bestandsmeldung aus der Werkstatt
+KANAL: wy
+BEDINGUNG: werktag
+GEWICHT: 2
+
+FRAGE: Bestandsmeldung Werkstatt steht aus, {anrede}. Ist das Werkzeug
+       vollzaehlig verraeumt?
+FRAGE: Die Zentrale erbittet eine Bestandsmeldung. Liegt sie vor?
+
+JA: Vermerkt. Eine Pruefung vor Ort bleibt vorbehalten.
+JA: Bestandsmeldung erfasst. Abweichungen gehen zu Ihren Lasten.
+
+NEIN: Nichtmeldung erfasst. Die Frist laeuft unveraendert weiter.
+NEIN: Zur Kenntnis genommen. Der Vorgang bleibt offen.

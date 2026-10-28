@@ -1,0 +1,13 @@
+# Ash hat mitgehoert. Haengt an reaktor_02.
+TITEL: Ash erkundigt sich nach dem Reaktor
+AN: ash
+STICHWORT: kuehlleitung, leitung, block zwei
+BEDINGUNG: merker reaktor_geprueft
+
+FRAGE: Ich habe gehoert, Ripley war unten. Darf ich den Befund sehen?
+JA: Danke. Ich lege eine Kopie an. Nur fuer die Akte, versteht sich.
+NEIN: Selbstverstaendlich. Es war auch nur eine Frage.
+
+SETZE_JA: ash_hat_befund
+ZAEHLE_JA: ash_zufrieden +1
+ZAEHLE_NEIN: ash_zufrieden -1

@@ -1,0 +1,13 @@
+#---- DATEI: wy_mahnung.txt ---------------------------------------------------
+
+# ===========================================================================
+# DURCHSAGE: Mahnung wegen untätiger Besatzung
+# Erscheint von selbst, wenn die Inspektion in frachtraum_01 verweigert wurde
+# ===========================================================================
+
+TITEL: Mahnung wegen untaetiger Besatzung
+KANAL: wy
+BEDINGUNG: nicht merker frachtraum_geprueft
+GEWICHT: 5
+MELDUNG: Die Zentrale erinnert daran: Frachtinspektionen dienen der Werterhaltung der Schiffsladung.
+MELDUNG: Nichtbearbeitete Statusmeldungen erhoehen die Risikostufe von USCSS Discovery.

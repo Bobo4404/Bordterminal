@@ -1,0 +1,6 @@
+# Erster Kontakt / Startmeldung
+KANAL: muthur
+BEDINGUNG: immer
+GEWICHT: 2
+TITEL: Begruessung nach Systemstart
+MELDUNG: USCSS DISCOVERY. Bordnetz online. Persönliches Arbeitslogbuch erkannt: {logbuch}. Guten Tag, {anrede}. Es liegen {offen} offene Vorgänge vor.

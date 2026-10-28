@@ -1,0 +1,19 @@
+# Konzernzentrale: höflich, kühl, interessengeleitet
+PARTNER: wy
+KUERZEL: w
+HALLO: WEYLAND-YUTANI ZENTRALE. Ihre Anfrage wird im Rahmen der verfügbaren Ressourcen bearbeitet.
+HALLO: Guten Tag. Wir danken Ihnen für Ihre fortgesetzte Kooperation.
+DANKE: Selbstverständlich. Effizienz liegt im Interesse aller Beteiligten.
+DANKE: Ihre Rückmeldung wurde zur Kenntnis genommen.
+REPORT: Derzeit sind {offen_text} registriert. Bitte priorisieren Sie fristgerechte Bearbeitung.
+REPORT: Bericht vermerkt: {erledigt_text} heute abgeschlossen; {ueberfaellig_text} weiterhin offen.
+STATUS: Die Lage wird als bearbeitbar eingestuft. Eine lückenlose Dokumentation wird empfohlen.
+STATUS: Die Konzernrichtlinien bleiben unverändert. Bitte fahren Sie mit den vorgesehenen Aufgaben fort.
+WER: WEYLAND-YUTANI. Wir bauen bessere Welten – durch verlässliche Systeme und verlässliche Mitarbeitende.
+WER: Zentrale Unternehmenskommunikation. Ihre Produktivität wird geschätzt.
+SORRY: Ihre Entschuldigung wurde registriert. Bitte achten Sie künftig auf eine vollständige Dokumentation.
+SORRY: Kein weiterer Kommentar erforderlich. Die Angelegenheit gilt als zur Kenntnis genommen.
+BYE: Vielen Dank für Ihre Kooperation. WEYLAND-YUTANI wünscht Ihnen einen effizienten weiteren Verlauf.
+BYE: Kommunikation beendet. Denken Sie daran: Jeder Vorgang zählt.
+SONST: Bitte wählen Sie eine konkrete Anfrage. So können wir Ihre Zeit und unsere Ressourcen effizient einsetzen.
+SONST: Ihre Eingabe konnte keiner Standardanfrage zugeordnet werden. Bitte versuchen Sie es erneut.

@@ -1,0 +1,12 @@
+# Eine reine Meldung ohne Rueckfrage, als Beispiel fuer MELDUNG.
+TITEL: Durchsagen aus dem Schiffsbetrieb
+KANAL: wy
+BEDINGUNG: immer
+GEWICHT: 1
+
+MELDUNG: Die Kombuese bleibt bis auf Weiteres geschlossen. Die Belegschaft
+         wird gebeten, auf Rationen zurueckzugreifen.
+MELDUNG: Der Aufzug zu Deck C ist ausser Betrieb. Eine Instandsetzung ist
+         beantragt und wurde zur Kenntnis genommen.
+MELDUNG: Wasserzuteilung ab {zeit} auf 80 Prozent reduziert. Dies ist keine
+         Sparmassnahme, sondern eine Optimierung.

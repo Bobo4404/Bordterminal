@@ -1,0 +1,6 @@
+# Seltene, kühle Konzernmeldung
+KANAL: wy
+BEDINGUNG: werktag
+GEWICHT: 1
+TITEL: Konzernrichtlinie
+MELDUNG: WEYLAND-YUTANI ZENTRALE. Produktivität ist ein gemeinsames Interesse. Bitte stellen Sie sicher, dass Ihre Einträge im Logbuch {logbuch} nachvollziehbar und vollständig bleiben.

@@ -1,0 +1,25 @@
+#==============================================================================
+# BORDTERMINAL - PROJEKT SIPHON DIALOGZWEIGE
+# Szenenkette und Verzweigungen für Frachtraum 2
+#==============================================================================
+
+#---- DATEI: frachtraum_01.txt ---------------------------------------------------
+
+# ===========================================================================
+# SZENE 1: Druckabfall in Frachtraum 2
+# Anstoß über @r frachtraum oder @r siphon
+# ===========================================================================
+
+TITEL: Druckabfall in Frachtraum 2
+AN: ripley
+STICHWORT: frachtraum, ventil, siphon
+BEDINGUNG: nicht merker frachtraum_geprueft
+BEDINGUNG: nicht merker ripley_unterwegs
+FRAGE: Die Sensoren in Frachtraum 2 schlagen an. Druckabfall an Siphon-Ventil 4. Soll ich runtergehen und nachsehen?
+JA: Gut. Ich sichere den Helm und klettere durch Schacht C. Gib mir vier Eingaben Zeit.
+NEIN: Verstanden. Hoffen wir, dass der Frachtbehaelter dicht bleibt.
+SETZE_JA: ripley_unterwegs
+ZAEHLE_JA: vertrauen_ripley +1
+ZAEHLE_NEIN: vertrauen_ripley -1
+SPAETER_JA: frachtraum_02 nach 4
+WEITER_NEIN: wy_mahnung

@@ -1,0 +1,16 @@
+#---- DATEI: finale_ash.txt ---------------------------------------------------
+
+# ===========================================================================
+# SZENE 7: Protokollierung durch Ash (Finale B)
+# Erreichbar wenn ash_hat_befund aktiv ist und Ash zufrieden ist
+# ===========================================================================
+
+TITEL: Protokollierung durch Ash
+AN: ash
+STICHWORT: analyse, daten
+BEDINGUNG: merker ash_hat_befund
+BEDINGUNG: zaehler ash_zufrieden >= 1
+FRAGE: Die Datenuebertragung an Weyland-Yutani ist abgeschlossen. Ein bedeutender Tag fuer die Forschung. Darf ich die Zusammenfassung abrufen?
+JA: Uebermittlung erfolgreich. Ich uebernehme die Terminalkontrolle.
+NEIN: Wie Sie wuenschen. Die Daten bleiben gesichert.
+FOLGE: sitrep

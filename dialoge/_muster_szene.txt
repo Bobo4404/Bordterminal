@@ -1,0 +1,27 @@
+# ===========================================================================
+#  MUSTER: SZENE
+#  Taucht nicht von selbst auf. Du rufst sie, indem du jemanden ansprichst
+#  und ein Stichwort nennst:   @r reaktor
+#  Zum Benutzen: kopieren und umbenennen, z.B. nach frachtraum_01.txt
+# ===========================================================================
+
+TITEL: <Wofuer ist diese Datei>
+
+# Wen sprichst du an:  ripley  ash  newt  dave  muthur  wy
+AN: ripley
+
+# Worauf reagiert die Szene. Mehrere Woerter mit Komma getrennt.
+STICHWORT: <stichwort>, <noch eins>
+
+# Damit die Szene nur einmal kommt: Merker am Ende setzen und hier pruefen.
+BEDINGUNG: nicht merker <szene_gelaufen>
+
+FRAGE: <Was die Person dich fragt?>
+JA: <Antwort auf ja.>
+NEIN: <Antwort auf nein.>
+
+# Was sich dadurch in der Welt aendert. Alles optional.
+SETZE: <szene_gelaufen>
+SETZE_JA: <du_hast_zugestimmt>
+ZAEHLE_JA: <vertrauen_ripley> +1
+ZAEHLE_NEIN: <vertrauen_ripley> -1

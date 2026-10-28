@@ -1,0 +1,15 @@
+# Abends, und nur wenn noch etwas offen ist.
+TITEL: Abendlicher Hinweis auf offene Posten
+KANAL: muthur
+BEDINGUNG: abend
+GEWICHT: 4
+
+FRAGE: Es sind noch {offen} Posten offen, {anrede}. Soll ich den Tag
+       zusammenfassen, bevor Sie Schluss machen?
+FRAGE: {erledigt} erledigt, {offen} offen. Wollen Sie einen Bericht fuer heute?
+
+JA: Verstanden. Ich stelle den Bericht zusammen.
+NEIN: In Ordnung. Dann bis morgen.
+NEIN: Wie Sie wuenschen. Ich lasse das Logbuch offen.
+
+FOLGE: sitrep

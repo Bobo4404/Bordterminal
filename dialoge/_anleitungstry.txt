@@ -1,0 +1,174 @@
+# ===========================================================================
+#  ANLEITUNG: eigene Dialoge schreiben
+# ---------------------------------------------------------------------------
+#  Jede .txt in diesem Ordner ist ein Gespraechsverlauf.
+#  Der Dateiname ist der Aufruf:  dialog _anleitung
+#
+#  Zeilen, die mit # anfangen, sind Notizen und werden nicht gelesen.
+#  Leere Zeilen auch nicht. Alles andere hat die Form   SCHLUESSEL: Text
+#
+#  Nach dem Aendern einer Datei einfach 'dialog' eintippen - das prueft
+#  alle Dateien und sagt dir mit Zeilennummer, was nicht stimmt.
+# ===========================================================================
+
+# Wer spricht?  wy = Weyland-Yutani Zentrale,  muthur = die Bordanlage
+KANAL: wy
+
+# Wann darf das kommen? Siehe Liste unten. Weglassen heisst: immer.
+BEDINGUNG: immer
+
+# Wie oft im Vergleich zu anderen Durchsagen? 1 bis 20, Vorgabe 3.
+GEWICHT: 1
+
+# Mehrere FRAGE-Zeilen = Vorrat, es wird zufaellig eine gewaehlt.
+FRAGE: Dies ist ein Beispieldialog, {anrede}. Funktioniert er?
+FRAGE: Testuebertragung an {anrede}. Kommt diese Meldung an?
+
+# Antworten auf ja. Auch hier: mehrere Zeilen = Vorrat.
+JA: Gut. Dann kannst du eigene Dialoge schreiben.
+JA: Bestaetigt. Das Format hast du verstanden.
+
+# Antworten auf nein.
+NEIN: Dann stimmt etwas nicht. 'dialog' zeigt dir Fehler mit Zeilennummer.
+NEIN: Schade. Die Datei liegt in dialoge/ und laesst sich bearbeiten.
+
+# Was soll bei 'ja' passieren? Weglassen heisst: nichts.
+# Moeglich: scan, sitrep, map, radar, home, fin
+# FOLGE: scan
+
+# ---------------------------------------------------------------------------
+#  SCHLUESSEL
+#    KANAL      wy oder muthur
+#    BEDINGUNG  siehe unten
+#    GEWICHT    1 bis 20
+#    FRAGE      Text, der eine Antwort erwartet (braucht JA und NEIN)
+#    JA         Erwiderung auf ja
+#    NEIN       Erwiderung auf nein
+#    MELDUNG    Text ohne Rueckfrage (statt FRAGE/JA/NEIN)
+#    FOLGE      scan, sitrep, map, radar, home, fin
+#    TITEL      nur fuer dich, wird nicht angezeigt
+#
+#  BEDINGUNG
+#    immer           jederzeit
+#    offen           es gibt offene Auftraege
+#    nichts_offen    es gibt keine offenen Auftraege
+#    ueberfaellig    mindestens eine Frist ist verstrichen
+#    kontamination   eine Kontamination laeuft gerade
+#    kein_scan       in dieser Sitzung wurde noch nicht gescannt
+#    erledigt_heute  heute wurde mindestens ein Auftrag abgeschlossen
+#    morgen          vor 12 Uhr
+#    mittag          12 bis 18 Uhr
+#    abend           18 bis 22 Uhr
+#    nacht           nach 22 Uhr
+#    werktag         Montag bis Freitag
+#    wochenende      Samstag und Sonntag
+#
+#  PLATZHALTER (in geschweiften Klammern)
+#    {anrede}       Dave, bei Verzug foermlicher
+#    {name}         Dave
+#    {offen}        Anzahl offener Auftraege
+#    {ueberfaellig} Anzahl ueberfaelliger Auftraege
+#    {erledigt}     heute abgeschlossene Auftraege
+#    {logbuch}      Name des aktuellen Logbuchs
+#    {datum}        heutiges Datum
+#    {zeit}         aktuelle Uhrzeit
+#    {schiff}       USCSS DISCOVERY
+#
+#  Lange Texte darfst du umbrechen: eine eingerueckte Folgezeile
+#  haengt automatisch an der vorigen.
+# ===========================================================================
+
+# ===========================================================================
+#  ZWEITE ART VON DATEI: GESPRAECHSPARTNER
+# ---------------------------------------------------------------------------
+#  Hat eine Datei die Zeile  PARTNER: <name>  , dann ist sie kein Dialog,
+#  sondern legt fest, wie jemand auf eine Ansprache antwortet.
+#
+#  Beispiel (siehe partner_ripley.txt):
+#
+#      PARTNER: ripley
+#      KUERZEL: r
+#
+#      HALLO: Morgen. Fangen wir an.
+#      HALLO: Hey. Alles unter Kontrolle hier?
+#      REPORT: {offen_text}, davon {ueberfaellig} ueberfaellig.
+#      BYE: Bis morgen. Mach nicht zu lange.
+#      SONST: Keine Ahnung. Frag MU/TH/UR, der weiss sowas.
+#
+#  Angesprochen wird mit @ und dem Kuerzel:   @r hallo
+#
+#  PARTNER kann sein: muthur, wy, dave, ripley, ash, newt
+#  KUERZEL ist frei waehlbar, ueblich der erste Buchstabe.
+#
+#  THEMEN (jedes beliebig oft, es wird zufaellig gewaehlt):
+#    HALLO    hallo, hi, hey, moin, servus, guten tag, na
+#    DANKE    danke, merci, thx, vielen dank
+#    REPORT   report, bericht, meldung, lage, lagebericht
+#    STATUS   status, wie gehts, alles klar, wie laeuft
+#    WER      wer, wer bist du, identifikation, ausweis
+#    SORRY    sorry, entschuldigung, tut mir leid, verzeihung
+#    BYE      bye, tschuess, ciao, bis spaeter, feierabend, gute nacht
+#    SONST    Antwort, wenn das Thema nicht erkannt wurde
+#
+#  Zusaetzliche Platzhalter mit richtiger Mehrzahl:
+#    {offen_text}         '1 offener Posten' oder '3 offene Posten'
+#    {ueberfaellig_text}  dasselbe fuer Ueberfaellige
+#    {erledigt_text}      '1 Vorgang' oder '4 Vorgaenge'
+# ===========================================================================
+
+# ===========================================================================
+#  DRITTE ART: GESCHICHTE
+# ---------------------------------------------------------------------------
+#  Hat eine Datei die Zeile  AN: <partner>  und STICHWORT, dann gehoert sie
+#  zur Geschichte. Sie wird nicht zufaellig gesendet, sondern erscheint,
+#  wenn du den Partner darauf ansprichst:
+#
+#      AN: ripley
+#      STICHWORT: reaktor, antrieb, maschinenraum
+#
+#  Aufruf dann:   @r reaktor
+#
+#  MERKER halten fest, was passiert ist. ZAEHLER messen Verhaeltnisse.
+#
+#      SETZE: ripley_unterwegs          Merker setzen
+#      SETZE_JA: kuehlleitung_gemeldet  nur bei der Antwort ja
+#      SETZE_NEIN: tuer_blieb_zu        nur bei nein
+#      LOESCHE: ripley_unterwegs        Merker wieder entfernen
+#      ZAEHLE: vertrauen_ripley +1      Zaehler aendern (auch -1)
+#      ZAEHLE_NEIN: ash_zufrieden -1
+#
+#  SPAETER schickt jemanden los, der sich dann von allein zurueckmeldet:
+#
+#      SPAETER_JA: reaktor_02 nach 4    taucht in 4 Eingaben auf
+#
+#  BEDINGUNG kann jetzt auch auf Merker und Zaehler pruefen. Mehrere
+#  BEDINGUNG-Zeilen muessen alle zutreffen:
+#
+#      BEDINGUNG: merker reaktor_geprueft
+#      BEDINGUNG: nicht merker ripley_unterwegs
+#      BEDINGUNG: zaehler vertrauen_ripley >= 2
+#
+#  'story' zeigt alle Merker, Verhaeltnisse und laufenden Auftraege.
+#  Alles liegt in daten/story.json.
+#
+#  Die Dateien reaktor_01, reaktor_02 und ash_fragt_nach sind eine kleine
+#  Beispielgeschichte. Sprich Ripley mit  @r reaktor  an.
+# ===========================================================================
+
+# ===========================================================================
+#  NOTIZDATEIEN
+# ---------------------------------------------------------------------------
+#  Faengt ein Dateiname mit einem Unterstrich an, ist die Datei eine Notiz:
+#
+#      _anleitung.txt    diese Datei
+#      _ideen.txt        deine Ideensammlung
+#      _entwurf.txt      eine halbfertige Szene
+#
+#  Notizen werden gelesen, aber nie verwendet: sie tauchen nicht als
+#  Durchsage auf, antworten auf kein Stichwort und werden nicht auf Fehler
+#  geprueft. Du kannst darin schreiben, was du willst. 'dialog' listet sie
+#  als 'Notiz' mit auf, damit du weisst, dass sie da sind.
+#
+#  Eine halbfertige Szene legst du also still, indem du die Datei von
+#  'reaktor_03.txt' in '_reaktor_03.txt' umbenennst.
+# ===========================================================================

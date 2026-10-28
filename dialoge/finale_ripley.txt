@@ -1,0 +1,17 @@
+#---- DATEI: finale_ripley.txt ---------------------------------------------------
+
+# ===========================================================================
+# SZENE 6: Schiffsrettung mit Ripley (Finale A)
+# Erreichbar wenn ladung_gesichert aktiv ist und Vertrauen hoch ist
+# ===========================================================================
+
+TITEL: Schiffsrettung mit Ripley
+AN: ripley
+STICHWORT: status, abschluss
+BEDINGUNG: merker ladung_gesichert
+BEDINGUNG: zaehler vertrauen_ripley >= 1
+FRAGE: Frachtraum 2 ist isoliert und das Leck versiegelt. Gute Arbeit da oben. Sollen wir den Vorfall im offiziellen Log abschliessen?
+JA: Logbuch versiegelt. Wir halten zusammen.
+NEIN: Offen gelassen. Ich behalte die Sensoren im Auge.
+ZAEHLE_JA: vertrauen_ripley +1
+FOLGE: home

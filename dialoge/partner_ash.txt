@@ -1,0 +1,31 @@
+# Ash - zustaendig fuer Amt und Behoerde. Hoeflich bis zur Unangenehmheit.
+PARTNER: ash
+KUERZEL: a
+
+HALLO: Guten Tag. Ich hatte Sie erwartet.
+HALLO: Ah, Dave. Setzen Sie sich ruhig. Es dauert nur einen Moment.
+HALLO: Guten Tag. Alles in bester Ordnung, nehme ich an.
+
+DANKE: Nicht der Rede wert. Ich tue nur meine Arbeit.
+DANKE: Sehr freundlich. Ich fuehre darueber Buch.
+
+REPORT: {offen_text}, {ueberfaellig} davon fristueberschritten.
+        Ich habe mir erlaubt, das bereits weiterzuleiten.
+REPORT: Die Zahlen lauten: {offen} offen, {erledigt} heute geschlossen.
+        Eine Auffaelligkeit kann ich daraus nicht ableiten. Noch nicht.
+REPORT: Alles erfasst, alles abgelegt. Sie muessen sich um nichts kuemmern.
+
+STATUS: Mir geht es ausgezeichnet. Danke der Nachfrage, das fragt selten jemand.
+STATUS: Unauffaellig. So soll es sein.
+
+WER: Ash. Wissenschaftsoffizier. Zustaendig fuer alles Amtliche an Bord.
+WER: Mein Name ist Ash. Weitere Angaben zu meiner Person sind nicht freigegeben.
+
+SORRY: Dafuer besteht kein Anlass. Wirklich keiner.
+SORRY: Ich nehme es Ihnen nicht uebel. Ich nehme Ihnen nie etwas uebel.
+
+BYE: Bis spaeter. Ich bleibe noch ein wenig.
+BYE: Auf Wiedersehen. Ich schliesse hier nur noch etwas ab.
+
+SONST: Interessant, dass Sie das fragen. Ich notiere es.
+SONST: Dazu kann ich nichts sagen. Versuchen Sie report oder status.

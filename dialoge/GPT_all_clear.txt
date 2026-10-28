@@ -1,0 +1,9 @@
+# Wenn nichts offen ist
+KANAL: muthur
+BEDINGUNG: nichts_offen
+GEWICHT: 3
+TITEL: Keine offenen Vorgänge
+FRAGE: Alle bekannten Vorgänge sind abgeschlossen. Soll ich die Übersicht aufrufen?
+JA: Übersicht wird geöffnet.
+NEIN: Verstanden. Ich bleibe in Bereitschaft.
+FOLGE: home

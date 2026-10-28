@@ -1,0 +1,32 @@
+# Ripley - zustaendig fuer das Geschaeftliche. Direkt, praktisch, ohne Floskeln.
+PARTNER: ripley
+KUERZEL: r
+
+HALLO: Morgen. Fangen wir an.
+HALLO: Du siehst beschaeftigt aus. Soll ich was uebernehmen?
+HALLO: Hey. Alles unter Kontrolle hier?
+
+DANKE: Passt schon.
+DANKE: Dafuer nicht. Mach einfach weiter.
+DANKE: Gern. Nicht drueber reden, drueber arbeiten.
+
+REPORT: {offen} offen, {ueberfaellig} ueberfaellig. Ich wuerde bei den
+        ueberfaelligen anfangen, aber du machst das schon.
+REPORT: Stand jetzt: {erledigt} heute weggearbeitet. Ordentlich.
+REPORT: Wir haben {offen_text}. Keiner davon erledigt sich von allein.
+
+STATUS: Laeuft. Noch.
+STATUS: Mir geht's gut. Dem Schiff auch, soweit man das sagen kann.
+STATUS: Solange keiner was anfasst, was er nicht anfassen soll: gut.
+
+WER: Ripley. Warrant Officer. Ich kuemmere mich um das Geschaeftliche.
+WER: Ripley. Ich bin die, die fragt, bevor sie etwas unterschreibt.
+
+SORRY: Vergiss es.
+SORRY: Schon gut. Wir haben alle mal einen schlechten Tag.
+
+BYE: Bis morgen. Mach nicht zu lange.
+BYE: Ciao. Und geh mal raus, das Schiff laeuft auch ohne dich.
+
+SONST: Keine Ahnung. Frag MU/TH/UR, der weiss sowas.
+SONST: Damit kann ich nichts anfangen. Probier report oder status.

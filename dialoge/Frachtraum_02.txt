@@ -1,0 +1,20 @@
+#---- DATEI: ash_einmischung.txt ---------------------------------------------------
+
+# ===========================================================================
+# SZENE 3: Ash fordert Bio-Proben
+# Schaltet sich direkt bei JA in frachtraum_02 ein
+# ===========================================================================
+
+TITEL: Ash fordert Bio-Proben
+AN: ash
+STICHWORT: probe, siphon, bio
+BEDINGUNG: merker frachtraum_geprueft
+FRAGE: Ich sehe die Logdaten von Ripleys Fund. Eine faszinierende Substanz. Darf ich die Daten unverzueglich an die Zentrale uebermitteln?
+JA: Ausgezeichnet. Die Wissenschaftsabteilung wird Ihre Kooperation vermerken.
+NEIN: Eine bedauerliche Entscheidung. Ich werde das im Geheimprotokoll festhalten.
+SETZE_JA: ash_hat_befund
+SETZE_NEIN: ash_abgewiesen
+ZAEHLE_JA: ash_zufrieden +1
+ZAEHLE_NEIN: ash_zufrieden -1
+WEITER_JA: finale_ash
+WEITER_NEIN: finale_ripley

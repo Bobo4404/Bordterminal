@@ -1,0 +1,24 @@
+# Dave - das bist du selbst. Zustaendig fuer Privates.
+# Nuetzlich vor allem, um sich selbst etwas in Erinnerung zu rufen.
+PARTNER: dave
+KUERZEL: d
+
+HALLO: Das Terminal meldet: Selbstgespraech erkannt. Das ist zulaessig.
+HALLO: Du redest mit dir selbst, {anrede}. Das Schiff urteilt nicht.
+
+DANKE: Gern geschehen, {anrede}. Von dir an dich.
+
+REPORT: Privat offen: siehe Logbuch {logbuch}. Insgesamt {offen_text},
+        {erledigt} heute geschafft.
+REPORT: Stand {datum}: {erledigt} erledigt. Du hast heute was geschafft.
+
+STATUS: Das weisst nur du selbst. Und du beantwortest es dir gerade.
+
+WER: Dave. Besatzungsmitglied, Bediener dieses Terminals,
+     zustaendig fuer alles Private.
+
+SORRY: Entschuldigung angenommen. Von dir selbst.
+
+BYE: Bis gleich. Du gehst ja nirgendwohin.
+
+SONST: Du weisst, was du meinst. Ich leider nicht.
