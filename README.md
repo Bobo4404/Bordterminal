@@ -1,6 +1,6 @@
 # Kanban-Board im Terminal
 
-Ein Kanban-Board für die Kommandozeile, mit Terminal-Look im Stil von Alien: Isolation.
+Ein Kanban-Board für die Kommandozeile, mit Terminal-Look im Stil vom Alien Franchise.
 Karten liegen in drei Spalten (Todo, In Arbeit, Fertig) und werden gespeichert.
 
 ## Voraussetzungen
