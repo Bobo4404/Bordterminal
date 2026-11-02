@@ -31,7 +31,7 @@ Beim Start läuft eine kurze Boot-Sequenz. Danach siehst du das Board.
 | `h` | Hilfe |
 | `q` | Speichern und beenden |
 
-Du kannst auch Wörter wie **Hallo**, **Danke** oder **Tschüss** schreiben. Das Programm antwortet darauf. Mit „Tschüss“ wird es beendet.
+Du kannst auch Wörter wie **Hallo**, **Danke** oder **Tschüss** schreiben. Das Programm antwortet darauf. Mit „Tschüss“ wirst du gefragt, ob beendet werden soll.
 
 ## Karten
 
