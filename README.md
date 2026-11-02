@@ -1,70 +1,41 @@
-# Kanban-Board im Terminal
+# Bordterminal
 
-Ein Kanban-Board für die Kommandozeile, mit Terminal-Look im Stil vom Alien Franchise.
-Karten liegen in drei Spalten (Todo, In Arbeit, Fertig) und werden gespeichert.
+Ein spielerisches Produktivitäts-Tool für das Terminal im Retro-Stil eines Raumschiff-Bordcomputers (inspiriert von MU/TH/UR aus „Alien“).
+Statt vieler einzelner Apps laufen Aufgaben, Notizen, Termine und Finanzen an einem Ort zusammen, mit Befehlen, Dialogen und kleinen Effekten, die die Arbeit am Rechner etwas lebendiger machen.
 
-## Voraussetzungen
+## Funktionen
 
-- Python 3.9 oder neuer
-- Windows empfohlen (Signaltöne funktionieren nur unter Windows)
+- **Kanban-Board:** Aufgaben anlegen, verschieben, durchsuchen und löschen, mit Fälligkeitsdatum, Priorität, Undo und mehreren Boards
+- **Notizen:** Notizen schreiben, anzeigen und durchsuchen
+- **Kalender:** Termine verwalten, Tagesübersicht und Erinnerungen an anstehende Fristen
+- **Wiederkehrende Aufgaben:** Regeln für Aufgaben, die sich wiederholen
+- **Finanzen:** Einnahmen, Ausgaben und Fixkosten erfassen, Sparziele verfolgen
+- **Einkaufsliste**
+- **Berichte und Export:** Statusberichte („Sitrep“) und Export als Markdown
+- **Atmosphäre:** Farbthemen, ASCII-Art, Dialoge, Soundeffekte und Kommentare bei Leerlauf
+
+## Technik
+
+- Python 3.9 oder neuer, nur Standardbibliothek (keine zusätzlichen Pakete nötig)
+- Datenspeicherung in JSON-Dateien im Ordner `daten/`
+- Läuft unter Windows, Linux und macOS (Soundeffekte nur unter Windows)
 
 ## Starten
 
-- Im Ordner des Programms: `py kanban.py` (Windows) oder `python3 kanban.py` (Mac/Linux)
-- Unter Windows mit `kb.bat`: Im Ordner `kb` eingeben. Damit `kb` in jedem Ordner funktioniert, muss der Ordner im PATH stehen.
+Windows:
 
-Beim Start läuft eine kurze Boot-Sequenz. Danach siehst du das Board.
+```
+py bordterminal.py
+```
 
-## Befehle
+Linux / macOS:
 
-| Befehl | Funktion |
-|---|---|
-| `s` | Board anzeigen |
-| `f <text>` | Karten nach Text durchsuchen (ohne Text: alle anzeigen) |
-| `a` | Karte anlegen: Spalte, Titel, Beschreibung, Fälligkeit und Priorität |
-| `v` | Karte verschieben (Karten-ID und Zielspalte angeben) |
-| `l` | Karte löschen |
-| `u` | Letzte Aktion rückgängig machen (Anlegen, Verschieben, Löschen) |
-| `b <name>` | Anderes Board öffnen, wird neu angelegt, falls es nicht existiert |
-| `e` | Board als Markdown exportieren (`board_<name>.md`) |
-| `t` | Farbthema wechseln (Grün, Amber, Blau) |
-| `h` | Hilfe |
-| `q` | Speichern und beenden |
+```
+python3 bordterminal.py
+```
 
-Du kannst auch Wörter wie **Hallo**, **Danke** oder **Tschüss** schreiben. Das Programm antwortet darauf. Mit „Tschüss“ wirst du gefragt, ob beendet werden soll.
+Mit `h` wird die Hilfe angezeigt, mit `q` wird gespeichert und beendet.
 
-## Karten
+## Über das Projekt
 
-- **Titel:** Pflichtfeld.
-- **Beschreibung:** optional, wird unter der Karte angezeigt.
-- **Fällig bis:** optional im Format `JJJJ-MM-TT`, zum Beispiel `2026-10-31`. Überfällige Karten, die nicht in „Fertig“ liegen, werden rot markiert.
-- **Priorität:** optional 1 bis 3. Wird als `!`, `!!` oder `!!!` angezeigt.
-
-Unter dem Board siehst du einen Fortschrittsbalken: Wie viele Karten in „Fertig“ liegen.
-
-## Effekte
-
-- **Glitch:** Alle 5 Sekunden verzerrt sich die Eingabezeile kurz.
-- **Ladebalken:** Nach jeder Eingabe läuft ein kurzer Balken.
-- **Kommentare:** Nach 45 Sekunden ohne Eingabe kommt ein Kommentar.
-- **Begrüßung:** Je nach Uhrzeit (morgens, abends, Späte Schicht).
-- **Signaltöne:** Bei Aktionen und Fehlern (nur Windows).
-
-## Dateien
-
-| Datei | Inhalt |
-|---|---|
-| `kanban.py` | Das Programm |
-| `kanban.json` | Das Standard-Board |
-| `kanban_<name>.json` | Weitere Boards, zum Beispiel `kanban_werkstatt.json` |
-| `board_<name>.md` | Export als Markdown, entsteht mit `e` |
-| `kb.bat` | Startdatei für Windows |
-
-Die Daten liegen im selben Ordner wie das Programm. Sichere die `.json`-Dateien, wenn du deine Karten behalten willst.
-
-## Fehlerbehebung
-
-- **`Python wurde nicht gefunden`:** Python ist nicht installiert oder nicht im PATH. Installiere Python von python.org und setze den Haken bei „Add python.exe to PATH“.
-- **`kb` funktioniert nicht:** Prüfe, ob `kb.bat` und `kanban.py` im selben Ordner liegen. Die Datei darf nicht `kb.bat.txt` heißen.
-- **Keine Farben oder Zeichen falsch:** Nutze Windows Terminal oder eine aktuelle Eingabeaufforderung.
-- **Pfeiltasten** sind nicht enthalten. Karten verschiebst du mit `v`, indem du die Karten-ID und die Zielspalte angibst.
+Bordterminal ist mein erstes größeres eigenes Projekt, entstanden neben meiner Umschulung zum Fachinformatiker für Anwendungsentwicklung. Dabei habe ich vor allem Programmstruktur, Datenhaltung mit JSON, Benutzereingaben im Terminal und plattformübergreifende Entwicklung geübt.
