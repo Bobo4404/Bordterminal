@@ -1,0 +1,11 @@
+{
+  "version": 3,
+  "spalten": {
+    "Befehle": [],
+    "Wartung": [],
+    "Reparatur": [],
+    "Erledigt": []
+  },
+  "naechste_id": 1,
+  "lage": null
+}

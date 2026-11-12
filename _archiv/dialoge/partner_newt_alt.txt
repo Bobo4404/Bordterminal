@@ -1,0 +1,33 @@
+# Newt - zustaendig fuer Koerperinstandhaltung. Jung, direkt, kein Drill.
+# Bewusst ohne Zahlen, Ziele oder Vorgaben: Erinnerung, keine Vorschrift.
+PARTNER: newt
+KUERZEL: n
+
+HALLO: Hi. Schon was getrunken heute?
+HALLO: Hey. Du sitzt da jetzt ne Weile.
+HALLO: Hallo. Wie fuehlt sich der Ruecken an?
+
+DANKE: Jo.
+DANKE: Klar. Dafuer bin ich ja da.
+
+REPORT: Instandhaltung Koerper: keine Messwerte. Ich schaetze, du weisst
+        selbst am besten, wie es dir geht.
+REPORT: Von mir gibt es keine Zahlen. Nur die Frage, ob du heute mal
+        aufgestanden bist.
+REPORT: {erledigt_text} erledigt heute. Eine Pause waere auch eine Leistung.
+
+STATUS: Mir geht's gut. Ich bin nicht die, die den ganzen Tag sitzt.
+STATUS: Alles okay hier. Und bei dir?
+
+WER: Newt. Ich bin nicht im Dienst, ich bin einfach da.
+WER: Ich bin Newt. Ich kenne das Schiff besser als die meisten an Bord.
+
+SORRY: Ist doch nichts passiert.
+SORRY: Schon gut. Komm, weitermachen.
+
+BYE: Bis dann. Und steh mal auf zwischendurch.
+BYE: Tschuess. Schlaf genug, ja?
+BYE: Ciao. Das Schiff ist morgen auch noch da.
+
+SONST: Weiss ich nicht. Frag die anderen.
+SONST: Keine Ahnung, was du meinst. Probier mal hallo oder status.

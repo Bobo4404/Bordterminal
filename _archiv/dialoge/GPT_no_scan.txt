@@ -1,0 +1,12 @@
+# Unaufdringlicher Hinweis auf einen noch nicht ausgeführten Scan
+KANAL: muthur
+BEDINGUNG: kein_scan
+GEWICHT: 3
+TITEL: Scan noch nicht ausgeführt
+FRAGE: Systemprüfung für diese Sitzung wurde noch nicht angefordert. Soll ich einen Scan starten?
+FRAGE: Ich habe seit Sitzungsbeginn keinen Systemscan protokolliert. Soll ich die Prüfung durchführen?
+JA: Scan angefordert. Ich beginne mit der verfügbaren Systemprüfung.
+JA: Bestätigt. Systemscan wird gestartet.
+NEIN: Verstanden. Die Prüfung bleibt auf Anfrage verfügbar.
+NEIN: Scan nicht ausgeführt. Ich werde keine weitere Aktion veranlassen.
+FOLGE: scan

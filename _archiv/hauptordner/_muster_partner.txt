@@ -1,0 +1,24 @@
+# ===========================================================================
+#  MUSTER: GESPRAECHSPARTNER
+#  Legt fest, wie jemand auf eine Ansprache antwortet:  @r hallo
+#  Es gibt schon einen je Person. Diese Datei brauchst du nur, wenn du
+#  einen neuen anlegen oder einen bestehenden ersetzen willst.
+# ===========================================================================
+
+# Wer:  muthur  wy  dave  ripley  ash  newt
+PARTNER: ripley
+
+# Womit du ihn ansprichst, ueblich der erste Buchstabe:  @r
+KUERZEL: r
+
+# Je Thema beliebig viele Zeilen. Es wird zufaellig eine gewaehlt.
+HALLO: <Antwort auf hallo, hi, hey, moin, servus, guten tag, na>
+DANKE: <Antwort auf danke, merci, thx, vielen dank>
+REPORT: <Antwort auf report, bericht, meldung, lage>
+STATUS: <Antwort auf status, wie gehts, alles klar>
+WER: <Antwort auf wer, wer bist du, identifikation>
+SORRY: <Antwort auf sorry, entschuldigung, tut mir leid>
+BYE: <Antwort auf bye, tschuess, ciao, feierabend, gute nacht>
+
+# Faengt alles ab, was zu keinem Thema passt. Ohne das wirkt es schnell leer.
+SONST: <Damit kann ich nichts anfangen. Probier report oder status.>

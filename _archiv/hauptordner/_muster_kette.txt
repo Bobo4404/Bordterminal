@@ -1,0 +1,67 @@
+# ===========================================================================
+#  MUSTER: DIALOGZWEIG
+#  Eine Kette aus mehreren Dateien. Es gibt genau drei Arten weiterzugehen.
+#  Diese Datei ist nur Erklaerung - kopiere dir die Bausteine heraus.
+# ===========================================================================
+#
+#  1) SOFORT WEITER: die naechste Szene kommt direkt nach der Antwort.
+#
+#       WEITER_JA: <datei_wenn_ja>
+#       WEITER_NEIN: <datei_wenn_nein>
+#       WEITER: <datei_in_beiden_faellen>
+#
+#     Der Dateiname steht ohne .txt. Die Datei muss es geben,
+#     sonst meldet 'dialog' einen Fehler.
+#
+#
+#  2) SPAETER: jemand geht los und meldet sich nach einigen Eingaben.
+#
+#       SPAETER_JA: <datei> nach 4
+#
+#     Die gerufene Datei braucht dann KEIN Stichwort - sie kommt von allein.
+#     Was gerade unterwegs ist, zeigt der Befehl 'story'.
+#
+#
+#  3) UEBER MERKER: eine Szene wartet, bis etwas anderes passiert ist.
+#
+#       In Datei eins:    SETZE_JA: reaktor_geprueft
+#       In Datei zwei:    BEDINGUNG: merker reaktor_geprueft
+#
+#     Damit entstehen Zweige, die sich erst spaeter oeffnen. Die zweite
+#     Szene kann bei einer ganz anderen Person liegen.
+#
+# ---------------------------------------------------------------------------
+#  SO SIEHT EINE FERTIGE KETTE AUS (drei Dateien):
+#
+#  --- reaktor_01.txt ---------------------------------------------
+#  AN: ripley
+#  STICHWORT: reaktor, antrieb
+#  BEDINGUNG: nicht merker reaktor_geprueft
+#  FRAGE: Der Reaktor? Soll ich nachsehen?
+#  JA: Gut. Gib mir ein paar Minuten.
+#  NEIN: Auch recht.
+#  SETZE_JA: ripley_unterwegs
+#  SPAETER_JA: reaktor_02 nach 4
+#
+#  --- reaktor_02.txt ---------------------------------------------
+#  AN: ripley
+#  FRAGE: Ich bin wieder oben. Die Kuehlleitung schwitzt. Eintragen?
+#  JA: Mach ich.
+#  NEIN: Deine Entscheidung.
+#  LOESCHE: ripley_unterwegs
+#  SETZE: reaktor_geprueft
+#  WEITER_JA: ash_fragt_nach
+#
+#  --- ash_fragt_nach.txt -----------------------------------------
+#  AN: ash
+#  STICHWORT: kuehlleitung
+#  BEDINGUNG: merker reaktor_geprueft
+#  FRAGE: Ripley war unten. Darf ich den Befund sehen?
+#  JA: Danke. Ich lege eine Kopie an.
+#  NEIN: Selbstverstaendlich.
+#  ZAEHLE_JA: ash_zufrieden +1
+#
+#  Ablauf:  @r reaktor  ->  ja  ->  vier Eingaben spaeter meldet sie sich
+#           ->  ja  ->  Ash meldet sich sofort  ->  ja
+#  Und ash_fragt_nach bleibt danach ueber  @a kuehlleitung  erreichbar.
+# ===========================================================================

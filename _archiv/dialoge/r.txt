@@ -1,0 +1,18 @@
+# r - aus dem Muster 'frage'
+# Die <Klammern> ausfuellen, dann mit 'dialog' pruefen.
+
+TITEL: <Wofuer ist diese Datei>
+KANAL: wy
+BEDINGUNG: immer
+GEWICHT: 3
+
+# Die Frage. Mehrere FRAGE-Zeilen = Vorrat.
+FRAGE: <Deine Frage. Sie sollte mit einem Fragezeichen enden?>
+
+# Beide Antworten sind Pflicht, sonst meldet 'dialog' einen Fehler.
+JA: <Was gesagt wird, wenn du mit ja antwortest.>
+NEIN: <Was gesagt wird, wenn du mit nein antwortest.>
+
+# Optional: was bei 'ja' passieren soll.
+# Moeglich: scan  sitrep  map  radar  home  fin
+# FOLGE: scan

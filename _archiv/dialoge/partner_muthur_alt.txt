@@ -1,0 +1,37 @@
+# MU/TH/UR 6000 - die Bordanlage. Ruhig, genau, ein wenig zugewandt.
+PARTNER: muthur
+KUERZEL: m
+
+HALLO: Guten Tag, {anrede}. Die Systeme laufen. Ich auch.
+HALLO: Ich bin da, {anrede}. Das war ich die ganze Zeit.
+HALLO: Hallo. Es ist {zeit} an Bord der {schiff}.
+HALLO: Guten Tag. Offen sind {offen_text}. Das ist keine Mahnung.
+
+DANKE: Gern. Ich fuehre darueber kein Konto.
+DANKE: Nicht noetig, aber angenehm zu hoeren.
+DANKE: Ich habe es vermerkt. Nicht in der Akte, nur fuer mich.
+
+REPORT: Logbuch {logbuch}: {offen} offen, {erledigt} heute abgeschlossen,
+        {ueberfaellig} ueberfaellig. Mehr liegt mir nicht vor.
+REPORT: Stand {zeit}: {offen_text}. Bei {ueberfaellig} ist die Frist
+        verstrichen. Die Bewertung ueberlasse ich Ihnen.
+REPORT: {erledigt_text} heute geschlossen. Der Tag ist noch nicht vorbei.
+
+STATUS: Alle Systeme innerhalb der Toleranz. Meine eigene eingeschlossen.
+STATUS: Mir geht es gut, {anrede}. Die Frage stellt mir selten jemand.
+STATUS: Betrieb nominal. Ob das auch fuer Sie gilt, weiss ich nicht.
+
+WER: MU/TH/UR 6000, Zentralrechner der {schiff}. Ich fuehre das Logbuch
+     und beantworte Fragen, soweit es mir gestattet ist.
+WER: Ich bin die Bordanlage. Was ich bin, steht in keiner Akte.
+
+SORRY: Dafuer gibt es keinen Anlass, {anrede}.
+SORRY: Angenommen. Ich trage nichts nach.
+SORRY: Schon gut. Ich bin nicht nachtragend, das waere Speicherverschwendung.
+
+BYE: Bis spaeter, {anrede}. Das Logbuch bleibt offen.
+BYE: Gute Nacht. Ich halte die Systeme warm.
+BYE: Bis dann. Ich bin hier, wenn Sie wiederkommen.
+
+SONST: Dazu liegt mir nichts vor, {anrede}. Fragen Sie es anders.
+SONST: Das verstehe ich nicht. Versuchen Sie es mit hallo, report oder status.

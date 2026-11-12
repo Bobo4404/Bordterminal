@@ -1,0 +1,33 @@
+# Weyland-Yutani Zentrale. Hoeflich, zustaendig, hilft nicht.
+PARTNER: wy
+KUERZEL: w
+
+HALLO: Guten Tag. Ihre Kontaktaufnahme wurde erfasst.
+HALLO: Die Zentrale begruesst Sie. Ein Anliegen ist nicht erforderlich.
+HALLO: Verbindung steht. Gespraechsdauer wird abgerechnet.
+
+DANKE: Dank ist im Dienstverhaeltnis nicht vorgesehen, wird aber vermerkt.
+DANKE: Gern geschehen. Eine Gegenleistung ergibt sich daraus nicht.
+DANKE: Die Zentrale nimmt Ihren Dank zur Kenntnis und legt ihn ab.
+
+REPORT: Vorgangsstand {logbuch}: {offen} offen, davon {ueberfaellig}
+        fristueberschritten. Eine Bewertung erfolgt zum Quartalsende.
+REPORT: Erfasst wurden {erledigt} Abschluesse am {datum}. Der Vergleichswert
+        liegt Ihnen nicht vor.
+REPORT: {offen_text}. Die Zentrale geht von Bearbeitung aus.
+
+STATUS: Der Zentrale geht es den Umstaenden entsprechend. Den Umstaenden
+        geht es gut.
+STATUS: Betriebsbereit. Ihre Frage wurde als unuebliche Anfrage vermerkt.
+
+WER: Weyland-Yutani Corporation, Zentrale. Building Better Worlds.
+WER: Hier spricht die Zentrale. Weitere Angaben unterliegen der Verschwiegenheit.
+
+SORRY: Eine Entschuldigung ist nicht vorgesehen und wurde dennoch erfasst.
+SORRY: Zur Kenntnis genommen. Der Vorgang bleibt davon unberuehrt.
+
+BYE: Die Verbindung wird getrennt. Ihre Mitarbeit wurde vermerkt.
+BYE: Auf Wiederhoeren. Das Gespraechsprotokoll verbleibt bei der Zentrale.
+
+SONST: Ihre Anfrage faellt nicht in die Zustaendigkeit dieser Stelle.
+SONST: Dazu liegt kein Formular vor. Versuchen Sie es mit report oder status.

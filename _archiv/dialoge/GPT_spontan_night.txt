@@ -1,0 +1,6 @@
+# Seltene Nachtmeldung
+KANAL: muthur
+BEDINGUNG: nacht
+GEWICHT: 1
+TITEL: Nachtschicht
+MELDUNG: Bordzeit {zeit}. Die meisten Routineprozesse laufen im Hintergrund. Ich bleibe auf Empfang, {name}.

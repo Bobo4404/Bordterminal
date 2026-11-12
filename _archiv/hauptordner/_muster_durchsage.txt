@@ -1,0 +1,39 @@
+# ===========================================================================
+#  MUSTER: DURCHSAGE
+#  Eine Meldung ohne Rueckfrage. Taucht von selbst auf, wenn die Bedingung
+#  passt. Zum Benutzen: kopieren und umbenennen, z.B. nach kombuese.txt
+# ===========================================================================
+
+# Nur fuer dich, wird nirgends angezeigt.
+TITEL: <Wofuer ist diese Datei>
+
+# Wer spricht:  wy = Zentrale,  muthur = Bordanlage
+KANAL: wy
+
+# Wann darf das kommen. Siehe Liste unten. Mehrere Zeilen = alle muessen gelten.
+BEDINGUNG: immer
+
+# Wie oft im Vergleich zu anderen Durchsagen, 1 bis 20.
+GEWICHT: 3
+
+# Der Text. Mehrere MELDUNG-Zeilen = Vorrat, es wird zufaellig eine gewaehlt.
+MELDUNG: <Dein erster Text.>
+MELDUNG: <Dein zweiter Text. Diese Zeile darfst du auch loeschen.>
+
+
+# ---------------------------------------------------------------------------
+#  BEDINGUNG kann sein:
+#    immer  offen  nichts_offen  ueberfaellig  kontamination  kein_scan
+#    erledigt_heute  morgen  mittag  abend  nacht  werktag  wochenende
+#    merker <name>            etwas ist passiert
+#    nicht merker <name>      etwas ist noch nicht passiert
+#    zaehler <name> >= <zahl> ein Verhaeltnis hat einen Stand erreicht
+#
+#  PLATZHALTER im Text:
+#    {anrede} {name} {offen} {ueberfaellig} {erledigt}
+#    {logbuch} {datum} {zeit} {schiff}
+#    {offen_text} {ueberfaellig_text} {erledigt_text}   mit richtiger Mehrzahl
+#
+#  Lange Texte darfst du umbrechen: eine eingerueckte Folgezeile haengt
+#  automatisch an der vorigen.
+# ===========================================================================

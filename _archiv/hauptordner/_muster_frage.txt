@@ -1,0 +1,21 @@
+# ===========================================================================
+#  MUSTER: FRAGE
+#  Wie eine Durchsage, aber sie wartet auf 'ja' oder 'nein'.
+#  Zum Benutzen: kopieren und umbenennen, z.B. nach werkstatt.txt
+# ===========================================================================
+
+TITEL: <Wofuer ist diese Datei>
+KANAL: wy
+BEDINGUNG: immer
+GEWICHT: 3
+
+# Die Frage. Mehrere FRAGE-Zeilen = Vorrat.
+FRAGE: <Deine Frage. Sie sollte mit einem Fragezeichen enden?>
+
+# Beide Antworten sind Pflicht, sonst meldet 'dialog' einen Fehler.
+JA: <Was gesagt wird, wenn du mit ja antwortest.>
+NEIN: <Was gesagt wird, wenn du mit nein antwortest.>
+
+# Optional: was bei 'ja' passieren soll.
+# Moeglich: scan  sitrep  map  radar  home  fin
+# FOLGE: scan

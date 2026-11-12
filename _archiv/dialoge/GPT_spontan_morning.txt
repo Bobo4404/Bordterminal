@@ -1,0 +1,6 @@
+# Seltene Morgenmeldung
+KANAL: muthur
+BEDINGUNG: morgen
+GEWICHT: 1
+TITEL: Morgenroutine
+MELDUNG: Guten Morgen, {name}. Bordzeit {zeit}. Die Systemuhr ist synchronisiert. Ich stehe für den Tagesbericht bereit.

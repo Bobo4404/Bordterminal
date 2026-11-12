@@ -1,0 +1,12 @@
+# Kontextuelle Statusabfrage
+KANAL: muthur
+BEDINGUNG: offen
+GEWICHT: 5
+TITEL: Offene Vorgänge
+FRAGE: Statusabgleich, {anrede}. Es sind {offen} Vorgänge offen. Soll ich den aktuellen Lagebericht ausgeben?
+FRAGE: Ich habe noch unerledigte Einträge im Logbuch {logbuch} registriert. Bericht anfordern?
+JA: Lagebericht wird vorbereitet.
+JA: Bestätigt. Ich stelle die offenen Vorgänge zusammen.
+NEIN: Verstanden. Ich bleibe im Bereitschaftsmodus.
+NEIN: Anfrage zurückgestellt. Die offenen Vorgänge bleiben protokolliert.
+FOLGE: sitrep
